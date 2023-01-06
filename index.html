@@ -39,7 +39,7 @@
           Effective Solutions <br />
           for Your Business
         </h1>
-        <button type="button" class="btn hero-btn">Order Service</button>
+        <button type="button" class="btn hero-btn" data-modal-open>Order Service</button>
       </section>
 
       <!-- Advantages -->
@@ -306,6 +306,16 @@
           </ul>
         </div>
       </section>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="cross-button" data-modal-close>
+            <svg class="cross-icon">
+              <use href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -349,5 +359,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
